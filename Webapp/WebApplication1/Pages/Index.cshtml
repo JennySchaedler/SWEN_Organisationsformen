@@ -1,0 +1,170 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Image Overlay Example";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Overlay Example</title>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            overflow: hidden; /* Verhindert das Scrollen des gesamten Dokuments */
+        }
+
+        nav {
+            /* Stile für deine Navigationsleiste hier */
+        }
+
+        #overlayText {
+            text-align: center;
+            color: white;
+        }
+
+        #overlayText h1 {
+            color: royalblue; /* Königsblau als Beispiel, Farbe nach Bedarf anpassen */
+        }
+
+        #overlayText p {
+            color: royalblue; /* Schriftfarbe des <p>-Elements ändern */
+        }
+
+        #overlayText a {
+            color: royalblue; /* Schriftfarbe des Links ändern */
+            text-decoration: underline; /* Optional: Unterstreichung hinzufügen */
+        }
+
+        .overlayImageContainer {
+            position: relative; /* Änderung der Positionierung auf relative */
+            top: 6cm; /* Abstand von oben in Zentimetern */
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none; /* Erlaube Mausklicks durch das Overlay */
+            display: flex; /* Container als Flexbox anzeigen */
+            justify-content: space-around; /* Bilder gleichmässig verteilen */
+        }
+
+        .overlayImage {
+            width: 100px; /* Breite der Overlay-Bilder anpassen */
+            height: auto;
+            cursor: pointer; /* Zeige Mauszeiger als Hand beim Klicken */
+            position: absolute; /* Position relativ zum Container */
+            top: -2cm; /* Bilder um 2 cm nach oben verschieben */
+        }
+
+        .selected {
+            border: 2px solid red; /* Rahmen um das ausgewählte Bild */
+        }
+
+        #backgroundImageContainer {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        #backgroundImage {
+            width: 80%;
+            height: auto;
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <!-- Deine Navigationsleiste hier -->
+    </nav>
+
+    <div id="overlayText">
+        <h1 class="display-4">Organisationsformen einfügen</h1>
+        <p id="learnText">Gestalten Sie Ihre Organisationsformen mit myForm.
+            Wählen Sie die Organisationsformen mit den Zahlen 2-8 (roter Rahmen entsteht).
+            Anschliessend können Sie die Figuren mit den Pfeiltasten bewegen.
+            Viel Spass beim Gestalten der Organisationsformen. Inspirationen finden Sie auf der nächsten Seite. 
+        </p>
+    </div>
+
+    <div class="overlayImageContainer">
+        <!-- Hier werden die Bilder dynamisch eingefügt -->
+        @for (int i = 2; i <= 8; i++)
+        {
+            var imageName = $"Image{i}.png";
+            <img src="~/images/@imageName" class="overlayImage" data-image-number="@i" style="left: @(i * 110)px; top: -2cm;" />
+        }
+    </div>
+
+    <div id="backgroundImageContainer">
+        <img id="backgroundImage" src="~/images/Image1.png" alt="Background" />
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            var selectedImage = null;
+            var selectedNumber = null;
+
+            $(".overlayImage").on("dblclick", function (event) {
+                // Entferne die Auswahl von allen Bildern
+                $(".overlayImage").removeClass("selected");
+
+                // Füge die Auswahl zum aktuellen Bild hinzu
+                $(this).addClass("selected");
+                selectedImage = $(this);
+                selectedNumber = selectedImage.data("image-number");
+
+                // Verhindere den Standardverhalten des Doppelklicks
+                event.preventDefault();
+                event.stopPropagation();
+            });
+
+            $(document).on("keydown", function (event) {
+                var pressedKey = event.key;
+
+                if (pressedKey >= '2' && pressedKey <= '8') {
+                    // Wähle das entsprechende Bild basierend auf der gedrückten Zahl
+                    selectedNumber = parseInt(pressedKey);
+                    var selectedImage = $(".overlayImage[data-image-number='" + selectedNumber + "']");
+
+                    // Setze die Auswahl zum aktuellen Bild
+                    $(".overlayImage").removeClass("selected");
+                    selectedImage.addClass("selected");
+                }
+
+                // Wenn eine Zahl ausgewählt wurde, prüfe die Pfeiltasten
+                if (selectedNumber !== null && (event.key === 'ArrowUp' || event.key === 'ArrowDown' || event.key === 'ArrowLeft' || event.key === 'ArrowRight')) {
+                    moveImage(selectedNumber, event.key.toLowerCase());
+                }
+            });
+
+            function moveImage(imageNumber, direction) {
+                var step = 20; // Schrittgrösse für die Bewegung
+                var selectedImage = $(".overlayImage[data-image-number='" + imageNumber + "']");
+                var currentOffset = selectedImage.offset();
+
+                switch (direction) {
+                    case 'arrowdown':
+                        selectedImage.offset({ top: currentOffset.top + step });
+                        break;
+                    case 'arrowup':
+                        selectedImage.offset({ top: currentOffset.top - step });
+                        break;
+                    case 'arrowleft':
+                        selectedImage.offset({ left: currentOffset.left - step });
+                        break;
+                    case 'arrowright':
+                        selectedImage.offset({ left: currentOffset.left + step });
+                        break;
+                }
+            }
+        });
+    </script>
+</body>
+</html>

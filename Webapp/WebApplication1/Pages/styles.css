@@ -1,0 +1,8 @@
+/* Lokales CSS */
+.overlayImage {
+    width: 100px;
+    height: auto;
+    cursor: grab;
+}
+
+/* Weitere Stilattribute nach Bedarf */

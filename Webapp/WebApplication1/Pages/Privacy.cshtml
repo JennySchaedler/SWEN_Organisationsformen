@@ -1,0 +1,130 @@
+﻿ @page
+@model PrivacyModel
+@{
+    ViewData["Title"] = "Informationen zu den Organisationsformen";
+}
+<!DOCTYPE html>
+<html lang="de">
+<head>
+</head>
+<body>
+    <header>
+        <h1>@ViewData["Title"]</h1>
+        <title>Image Overlay Example</title>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <style>
+
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        nav {
+            /* Stile für deine Navigationsleiste hier */
+        }
+
+        #overlayText {
+            text-align: center;
+            color: white;
+        }
+
+        #overlayText h1 {
+            color: royalblue; /* Königsblau als Beispiel, Farbe nach Bedarf anpassen */
+        }
+
+        #overlayText p {
+            color: royalblue; /* Schriftfarbe des <p>-Elements ändern */
+        }
+
+        #overlayText a {
+            color: royalblue; /* Schriftfarbe des Links ändern */
+            text-decoration: underline; /* Optional: Unterstreichung hinzufügen */
+        }
+
+        #overlayImagesContainer {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none; /* Erlaube Mausklicks durch das Overlay */
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .overlayImage {
+            width: 100px; /* Breite der Overlay-Bilder anpassen */
+            height: auto;
+            cursor: grab; /* Zeige Mauszeiger als Hand beim Greifen */
+        }
+
+        #backgroundImageContainer {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        #backgroundImage {
+            width: 80%;
+            height: auto;
+            z-index: -1;
+        }
+    </style>
+    </header>
+
+    <main>
+        <div class="privacyText">
+            <!-- Beispieltext wird verschoben -->
+            <h2>Schwarm</h2>
+            <p>Mit dem Punkte Symbol kann die Organisationsform Schwarm dargestellt werden. Damit ist gemeint, dass die Teilnehmenden im Wasser verteilt sind und üben. 
+                Oft kommt diese Organisationsform beim Kennenlernen der Wassereigenschaften in den Einsatz. 
+                Bekannte Übungen sind beispielsweise Seerose, Flugzeug, Fässli, Fischauge, Blöterli. 
+                Diese Übungen sind im unteren Bereich der Grundlagentest (swimsports) eingeordnet. 
+                Aber auch Purzelbäume und der Handstand kann gut in dieser Organisationsform geübt werden. </p>
+
+            <h2>Bewegungsrichtung</h2>
+            <p>Fürs Festlegen der Bewegungsrichtung wurden Pfeile gewählt.  
+                
+            </p>
+
+            <h2>Bahnenschwimmen</h2>
+            <p>Oft werden im Schwimmunterricht klassisch Längen im Rechtsverkehr geschwommen. 
+                Dieses Tool bietet die Möglichkeiten sich mal andere Organisationsformen zu überlegen. 
+                Wie wäre es mit einem Schwimmen von der Mitte aus fürs Wendetrainen, dies ist auch empfehlens Wert bei heterongenen Gruppen. 
+                Dies bietet auch Vereinfachungs und Erschwerungsmöglichkeiten für Schwärchere und Stärkere Teilnehmende. </p>
+
+            <h2>Halbesbecken</h2>
+            <p>Hat man ein Halbesbecken schwimmen vielen im Viereck mit Posten. Man kann auch die Breite nutzen für Gleitübungen, Tauchstaffetten, 
+                zuzweit Schwimmen oder mal Diagonal im Dreieck gegeneinander. Aufs Leistungsniveau angepasst stehen hier viele Variationsmöglichkeiten offen.  
+            </p>
+
+            <h2>Lehrschwimmbecken</h2>
+            <p>Im Lehrschwimmbecken hat man oft stehteifes Wasser und viel nutzen die Schwarm-Form und die Breite. 
+                Aber auch im Lehrschwimmbecken können die Teilnehmenden lernen weiterzuschwimmen, was den Vorteil hat das sie weniger frieren. 
+                Auch ist der Wechsel ins Tiefwasser für die Teilnehmenden entspannter. Fürs Schwimmen der längern Distanz im Lehrschwimmbecken können geren Hilfsmittel wie Poolnoodeln, Pool-Buoys, Bretter etc, genutzt werden.
+                Das Lehrschwimmbecke ist ideal um Vertrauen zum Wasser zu entwicklen.</p>
+
+            <h2>Hilfsleiter</h2>
+            <p>Hilfsleiter sind oft noch Minderjährig und angehende Leiterpersonen. Sie unterstützen den Leitenden tatkräftig und lernen bei jeder Lektion dazu. 
+                Oft haben angehende Leitende noch nicht das Bewusstsein für die Relevanz der Organisationsformen, mit Hilfe dieses des myForms kann das Thema gemeinsam 
+                besprochen und erarbeitet werden. Auch kann es die Hilfsleitenden helfen während der Lektion sich so Positionieren, dass man alle Teilnehmende im Blick hat. </p>
+
+            <h2>Leiter</h2>
+            <p>Die Leiterperson ist für die Teilnehmenden des Unterrichts verantwortlich. Deshalb soll sie stehts alle Teilnehmer im Blick haben. 
+                Nutzen Sie das Gestalten der Organisationsform für die Planung Ihres Unterrichts und zum eigenen aber auch zum Schutz für die Teilnehmenden. 
+                Durch unterschiedliche Organisationformen kann der Unterricht abwechslungsreich gestaltet, variiert und das Erlernte gefestigt werden. </p>
+
+            <!-- ... Weitere Titel und Texte hier einfügen ... -->
+        </div>
+    </main>
+
+    <script>
+    </script>
+</body>
+</html>
