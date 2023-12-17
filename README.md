@@ -23,23 +23,23 @@ Dieses Projekt ist eine Webanwendung für die Darstellung von verschiedenen Orga
 7. [Hinweise](#hinweise)
 
 ## Ordnerstruktur
-- **wwwroot**: Enthält statische Dateien wie CSS, JavaScript und Bilder.
-- **Pages**: Enthält Razor Pages für die Webanwendung.
+- wwwroot: Enthält statische Dateien wie CSS, JavaScript und Bilder.
+- Pages: Enthält Razor Pages für die Webanwendung. Bilden das Interface der Anwendung.
 
 ## CSS-Dateien
-- **WebApplication1.styles.css**: Stile für die gesamte Anwendung, einschließlich der Organisation von Elementen.
-- **_content/WebApplication1/Pages/Shared/_Layout.cshtml.rz.scp.css**: CSS-Stile spezifisch für das Layout.
+- WebApplication1.styles.css: Stile für die gesamte Anwendung, einschliesslich der Organisation von Elementen.
+- _content/WebApplication1/Pages/Shared/_Layout.cshtml.rz.scp.css: CSS-Stile spezifisch für das Layout.
 
 ## JavaScript-Dateien
-- **main.js**: Lokales JavaScript für die Anwendung, einschließlich einer Funktion zum Aktivieren des Drag-and-Drop für Overlay-Bilder.
+- main.js: Lokales JavaScript für die Anwendung, einschließlich einer Funktion zum Aktivieren des Drag-and-Drop für Overlay-Bilder.
 
 ## HTML/CSS-Dateien
-- **Privacy.cshtml**: Razor Page für Informationen zu den Organisationsformen.
-- **Index.cshtml**: Razor Page für die Hauptseite mit verschiedenen Organisationsformen.
+- Privacy.cshtml: Razor Page für Informationen zu den Organisationsformen.
+- Index.cshtml: Razor Page für die Hauptseite mit verschiedenen Organisationsformen.
 
 ## ASP.NET Core Code
-- **Startup.cs**: Konfiguration der ASP.NET Core-Anwendung, einschließlich Routen, Dienste und Middleware.
-- **Program.cs**: Initialisierung und Ausführung der ASP.NET Core-Anwendung.
+- Startup.cs: Konfiguration der ASP.NET Core-Anwendung, einschließlich Routen, Dienste und Middleware.
+- Program.cs: Initialisierung und Ausführung der ASP.NET Core-Anwendung.
 
 ## Versionierung
 Die Git-Versionierung wurde am 27.10.2023 für das Projekt eingerichtet. 
