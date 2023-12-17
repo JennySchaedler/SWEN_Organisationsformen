@@ -53,10 +53,6 @@
       "PackagePath": "staticwebassets\\js\\main.js"
     },
     {
-      "Id": "C:\\Users\\schae\\Desktop\\SWEN_Organisationsformen\\Webapp\\WebApplication1\\wwwroot\\js\\site.js",
-      "PackagePath": "staticwebassets\\js\\site.js"
-    },
-    {
       "Id": "C:\\Users\\schae\\Desktop\\SWEN_Organisationsformen\\Webapp\\WebApplication1\\wwwroot\\lib\\bootstrap\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\bootstrap"
     },

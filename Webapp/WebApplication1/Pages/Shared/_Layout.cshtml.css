@@ -1,48 +1,61 @@
-﻿/* Please see documentation at https://learn.microsoft.com/aspnet/core/client-side/bundling-and-minification
-for details on configuring this project to bundle and minify static web assets. */
+﻿/* 
+   Bitte siehe die Dokumentation unter https://learn.microsoft.com/aspnet/core/client-side/bundling-and-minification
+   für Details zur Konfiguration dieses Projekts für das Bündeln und Minifizieren von statischen Webressourcen.
+*/
 
+/* Stilregeln für die Navbar-Marke */
 a.navbar-brand {
-  white-space: normal;
-  text-align: center;
-  word-break: break-all;
+  white-space: normal;      /* Normale Umbruchregeln für den Textinhalt */
+  text-align: center;       /* Zentrierte Ausrichtung des Texts */
+  word-break: break-all;    /* Worttrennung bei Bedarf, um den Text besser anzupassen */
 }
 
+/* Allgemeine Stilregeln für Hyperlinks */
 a {
-  color: #0077cc;
+  color: #0077cc;           /* Farbe für Standard-Hyperlinks */
 }
 
+/* Stilregeln für primäre Schaltflächen */
 .btn-primary {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
+  color: #fff;              /* Textfarbe für primäre Schaltflächen */
+  background-color: #1b6ec2; /* Hintergrundfarbe für primäre Schaltflächen */
+  border-color: #1861ac;     /* Randfarbe für primäre Schaltflächen */
 }
 
-.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
+/* Stilregeln für aktive Navigationslinks und geöffnete Navigationslinks in Tabs */
+.nav-pills .nav-link.active, 
+.nav-pills .show > .nav-link {
+  color: #fff;              /* Textfarbe für aktive Navigationslinks und geöffnete Tabs */
+  background-color: #1b6ec2; /* Hintergrundfarbe für aktive Navigationslinks und geöffnete Tabs */
+  border-color: #1861ac;     /* Randfarbe für aktive Navigationslinks und geöffnete Tabs */
 }
 
+/* Stilregeln für obere Begrenzungslinien */
 .border-top {
-  border-top: 1px solid #e5e5e5;
+  border-top: 1px solid #e5e5e5;  /* Farbe und Stil der oberen Begrenzungslinie */
 }
+
+/* Stilregeln für untere Begrenzungslinien */
 .border-bottom {
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;  /* Farbe und Stil der unteren Begrenzungslinie */
 }
 
+/* Stilregeln für Schatten */
 .box-shadow {
-  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);  /* Box-Schatten für ein leichtes Abheben von Elementen */
 }
 
+/* Stilregeln für die Zustimmungsrichtlinie-Schaltfläche */
 button.accept-policy {
-  font-size: 1rem;
-  line-height: inherit;
+  font-size: 1rem;           /* Schriftgröße für die Zustimmungsrichtlinie-Schaltfläche */
+  line-height: inherit;      /* Beibehaltung der normalen Zeilenhöhe */
 }
 
+/* Stilregeln für den Footer */
 .footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  white-space: nowrap;
-  line-height: 60px;
+  position: absolute;        /* Absolute Positionierung am unteren Rand */
+  bottom: 0;                 /* Abstand zum unteren Rand */
+  width: 100%;               /* Vollständige Breite des Containers */
+  white-space: nowrap;       /* Verhindern des Zeilenumbruchs im Footer */
+  line-height: 60px;         /* Zeilenhöhe für den Footer */
 }

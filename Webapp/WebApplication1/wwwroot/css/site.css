@@ -1,22 +1,22 @@
 html {
-  font-size: 14px;
+  font-size: 14px; /* Standardschriftgrösse des HTML-Elements ist 14 Pixel */
 }
 
 @media (min-width: 768px) {
   html {
-    font-size: 16px;
+    font-size: 16px; /* Wenn die Bildschirmbreite mindestens 768 Pixel beträgt, ändere die Schriftgröße des HTML-Elements auf 16 Pixel */
   }
 }
 
 .btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb; /* Box-Schatten für die verschiedene fokussierte Elemente, wie Schaltflächen und Eingabefelder */
 }
 
 html {
-  position: relative;
+  position: relative; /* Setzt die Position des HTML-Elements auf 'relative' und die minimale Höhe auf 100% des sichtbaren Bereichs */
   min-height: 100%;
 }
 
 body {
-  margin-bottom: 60px;
+  margin-bottom: 60px; /* Setzt den unteren Seitenrand des Body-Elements auf 60 Pixel */
 }

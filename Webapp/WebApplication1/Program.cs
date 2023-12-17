@@ -1,15 +1,15 @@
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
+// Services dem Container hinzufügen.
 builder.Services.AddRazorPages();
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
+// Die HTTP-Anforderungspipeline konfigurieren.
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Error");
-    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
+    // Der Standardwert für HSTS beträgt 30 Tage. Dies kann für Produktionsumgebungen geändert werden, siehe https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
 }
 

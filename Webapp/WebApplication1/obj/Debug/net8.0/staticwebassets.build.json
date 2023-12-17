@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "tJcWI7sZXucV/yku0XISw1RcPWsWmO8MTg8h8isTq/Y=",
+  "Hash": "0Glt3aavaUxhVYtyaR/o95C4oTiH9oJAozRYscDzcGA=",
   "Source": "WebApplication1",
   "BasePath": "_content/WebApplication1",
   "Mode": "Default",
@@ -281,25 +281,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\main.js"
-    },
-    {
-      "Identity": "C:\\Users\\schae\\Desktop\\SWEN_Organisationsformen\\Webapp\\WebApplication1\\wwwroot\\js\\site.js",
-      "SourceId": "WebApplication1",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\schae\\Desktop\\SWEN_Organisationsformen\\Webapp\\WebApplication1\\wwwroot\\",
-      "BasePath": "_content/WebApplication1",
-      "RelativePath": "js/site.js",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\js\\site.js"
     },
     {
       "Identity": "C:\\Users\\schae\\Desktop\\SWEN_Organisationsformen\\Webapp\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",

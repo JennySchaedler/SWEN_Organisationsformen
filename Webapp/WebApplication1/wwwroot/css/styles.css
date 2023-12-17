@@ -1,8 +1,10 @@
+/* Verhindert das Scrollen des gesamten Dokuments, wenn der Inhalt zu groß ist */
 body {
-    overflow: hidden;
+    overflow: hidden; /* Das Dokument wird nicht scrollbar */
 }
 
+/* Ermöglicht das vertikale Scrollen innerhalb des Containers mit einer begrenzten Höhe */
 .container {
-    overflow-y: auto;
-    max-height: 100vh;
+    overflow-y: auto; /* Erlaubt vertikales Scrollen, wenn der Inhalt die Höhe des Containers überschreitet */
+    max-height: 100vh; /* Setzt die maximale Höhe des Containers auf 100% der Bildschirmhöhe */
 }

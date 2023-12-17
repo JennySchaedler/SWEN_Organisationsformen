@@ -1,44 +1,54 @@
-/* Please see documentation at https://learn.microsoft.com/aspnet/core/client-side/bundling-and-minification
-for details on configuring this project to bundle and minify static web assets. */
+/* Bitte siehe die Dokumentation unter https://learn.microsoft.com/aspnet/core/client-side/bundling-and-minification
+   für Details zur Konfiguration dieses Projekts zur Bündelung und Minimierung statischer Web-Ressourcen. */
 
+/* Stile für einen Navbar-Brand-Link */
 a.navbar-brand[b-g6ltozs93r] {
   white-space: normal;
   text-align: center;
   word-break: break-all;
 }
 
+/* Allgemeine Stile für Links */
 a[b-g6ltozs93r] {
   color: #0077cc;
 }
 
+/* Stile für primäre Schaltflächen */
 .btn-primary[b-g6ltozs93r] {
   color: #fff;
   background-color: #1b6ec2;
   border-color: #1861ac;
 }
 
-.nav-pills .nav-link.active[b-g6ltozs93r], .nav-pills .show > .nav-link[b-g6ltozs93r] {
+/* Stile für aktive und angezeigte Zustände von Navigationslinks im Pillen-Stil */
+.nav-pills .nav-link.active[b-g6ltozs93r],
+.nav-pills .show > .nav-link[b-g6ltozs93r] {
   color: #fff;
   background-color: #1b6ec2;
   border-color: #1861ac;
 }
 
+/* Randstile */
 .border-top[b-g6ltozs93r] {
   border-top: 1px solid #e5e5e5;
 }
+
 .border-bottom[b-g6ltozs93r] {
   border-bottom: 1px solid #e5e5e5;
 }
 
+/* Box-Schatten-Stil */
 .box-shadow[b-g6ltozs93r] {
   box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
 }
 
+/* Stile für eine Schaltfläche mit der Klasse "accept-policy" */
 button.accept-policy[b-g6ltozs93r] {
   font-size: 1rem;
   line-height: inherit;
 }
 
+/* Stile für einen Footer mit der Klasse "footer" */
 .footer[b-g6ltozs93r] {
   position: absolute;
   bottom: 0;

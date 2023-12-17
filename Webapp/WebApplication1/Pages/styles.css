@@ -1,8 +1,10 @@
 /* Lokales CSS */
+
+/* Definiert das Aussehen für Elemente mit der Klasse "overlayImage" */
 .overlayImage {
-    width: 100px;
-    height: auto;
-    cursor: grab;
+    width: 100px; /* Breite des Elements */
+    height: auto; /* Automatische Höhe beibehalten, um das Bild nicht zu strecken */
+    cursor: grab; /* Ändert den Mauszeiger beim Überfahren des Elements zu einer Hand */
 }
 
-/* Weitere Stilattribute nach Bedarf */
+/* Weitere Stilattribute können nach Bedarf hinzugefügt werden */

@@ -1,19 +1,25 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace WebApplication1.Pages;
-
-public class IndexModel : PageModel
+namespace WebApplication1.Pages
 {
-    private readonly ILogger<IndexModel> _logger;
-
-    public IndexModel(ILogger<IndexModel> logger)
+    // IndexModel ist eine Razor Page Model-Klasse für die Indexseite.
+    public class IndexModel : PageModel
     {
-        _logger = logger;
-    }
+        // Logger-Instanz für die Protokollierung von IndexModel-bezogenen Vorgängen.
+        private readonly ILogger<IndexModel> _logger;
 
-    public void OnGet()
-    {
+        // Konstruktor für IndexModel, der einen Logger entgegennimmt.
+        public IndexModel(ILogger<IndexModel> logger)
+        {
+            _logger = logger;
+        }
 
+        // OnGet ist eine Methode, die aufgerufen wird, wenn eine HTTP-GET-Anforderung für die Indexseite erfolgt.
+        public void OnGet()
+        {
+            // Hier können Logik und Datenmanipulation für die Verarbeitung einer GET-Anforderung hinzugefügt werden.
+            // Derzeit ist die Methode leer, es können jedoch weitere Aktionen hinzugefügt werden.
+        }
     }
 }

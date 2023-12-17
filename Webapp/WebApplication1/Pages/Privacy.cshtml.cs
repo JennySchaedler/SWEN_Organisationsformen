@@ -1,19 +1,26 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿// Hier werden die notwendigen Namespace-Direktiven importiert
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace WebApplication1.Pages;
-
-public class PrivacyModel : PageModel
+// Der Namespace für das Razor-Page-Modell wird definiert
+namespace WebApplication1.Pages
 {
-    private readonly ILogger<PrivacyModel> _logger;
-
-    public PrivacyModel(ILogger<PrivacyModel> logger)
+    // Die PrivacyModel-Klasse wird deklariert und von PageModel abgeleitet
+    public class PrivacyModel : PageModel
     {
-        _logger = logger;
-    }
+        // Ein privates Feld für das Logging-Objekt wird deklariert
+        private readonly ILogger<PrivacyModel> _logger;
 
-    public void OnGet()
-    {
+        // Ein Konstruktor für PrivacyModel wird erstellt und das Logger-Objekt injiziert
+        public PrivacyModel(ILogger<PrivacyModel> logger)
+        {
+            _logger = logger;
+        }
+
+        // Die OnGet-Methode wird aufgerufen, wenn eine GET-Anforderung für die Seite erfolgt
+        public void OnGet()
+        {
+            // Hier könnte Logik für die Verarbeitung der GET-Anforderung stehen (zum Beispiel Daten laden)
+        }
     }
 }
-
