@@ -44,7 +44,7 @@ Dieses Projekt ist eine Webanwendung für die Darstellung von verschiedenen Orga
 ## Versionierung
 Die Git-Versionierung wurde am 27.10.2023 für das Projekt eingerichtet. 
 Da es bei der Umstellung auf den .net-Ansatz zu einem explorativen Projekt wurde, wurde bis zur ausführbaren Webapp auf den Ansatz des lokalen Speicherns umgestiegen. Der Dozent kann die Versionen im one-drive Ordner finden https://1drv.ms/f/s!Atx8abvljqrmiQq-DUmboov6XEm5?e=AkKRaY . 
-Das Projekt wurde dann wieder mit einer ausführbaren .net App commited und anschliessend nochmals mit den vereinheitlichten Kommentaren. 
+Das Projekt wurde dann wieder mit einer ausführbaren .net App commited, anschliessend mit den vereinheitlichten Kommentaren, dem Updaten der Readme-Datei und dem Löschen der nicht mehr verwendeten Dateien. 
 
 ## Hinweise
-Der Code enthält Kommentare Deutsch, um die Verständlichkeit zu verbessern. Die Bereiche des json sind nicht kommentiert, da json keine Kommentare unterstützt. Auch Lizenzen und mit dem Projekt geladene Dateien enthalten, wenn nur die ursprünglich enthaltenen Kommentare. 
+Der Code enthält Kommentare Deutsch, um die Verständlichkeit zu verbessern. Die Bereiche des json sind nicht kommentiert, da json keine Kommentare unterstützt. Auch Lizenzen und mit dem Projekt geladene Dateien enthalten, wenn nur die ursprünglich enthaltenen Kommentare. Bei Frage oder falls der Code auf Ihrem Computer nicht ausführbar ist, stehe ich gerne zur Verfügung (jenny.schaedler@ost.ch). 
