@@ -41,10 +41,10 @@ Dieses Projekt ist eine Webanwendung für die Darstellung von verschiedenen Orga
 - **Startup.cs**: Konfiguration der ASP.NET Core-Anwendung, einschließlich Routen, Dienste und Middleware.
 - **Program.cs**: Initialisierung und Ausführung der ASP.NET Core-Anwendung.
 
-## Konfiguration und Ausführung
-1. Überprüfen Sie die Ordnerstruktur und passen Sie die Pfade in den Konfigurationsdateien an, wenn erforderlich.
-2. Stellen Sie sicher, dass Sie die erforderlichen Abhängigkeiten und Tools installiert haben.
-3. Starten Sie die Anwendung und überprüfen Sie sie im Browser.
+## Versionierung
+Die Git-Versionierung wurde am 27.10.2023 für das Projekt eingerichtet. 
+Da es bei der Umstellung auf den .net-Ansatz zu einem explorativen Projekt wurde, wurde bis zur ausführbaren Webapp auf den Ansatz des lokalen Speicherns umgestiegen. Der Dozent kann die Versionen im one-drive Ordner finden https://1drv.ms/f/s!Atx8abvljqrmiQq-DUmboov6XEm5?e=AkKRaY . 
+Das Projekt wurde dann wieder mit einer ausführbaren .net App commited und anschliessend nochmals mit den vereinheitlichten Kommentaren. 
 
 ## Hinweise
 Der Code enthält Kommentare Deutsch, um die Verständlichkeit zu verbessern. Die Bereiche des json sind nicht kommentiert, da json keine Kommentare unterstützt. Auch Lizenzen und mit dem Projekt geladene Dateien enthalten, wenn nur die ursprünglich enthaltenen Kommentare. 
