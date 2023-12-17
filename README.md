@@ -1,5 +1,12 @@
 # SWEN_Organisationsformen
  SWEN_Organisationsformen_fuers_Hallenbad
+
+ Um das Projekt zu starten, 
+ - öffnet man Visual Studio Code,
+ - öffnet man den Ordner WebApp,
+ - öffnet ein NEW TERMINAL,
+ - Eingabe: "cd .\WebApplication1\"
+ - Eingabe: "dotnet run" 
  
 # Webanwendungsprojekt für Organisationsformen
 
